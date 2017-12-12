@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		377F586D1FE0386B00DAE6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F586C1FE0386B00DAE6CC /* AppDelegate.swift */; };
+		377F586F1FE0386B00DAE6CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F586E1FE0386B00DAE6CC /* ViewController.swift */; };
+		377F58721FE0386B00DAE6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377F58701FE0386B00DAE6CC /* Main.storyboard */; };
+		377F58741FE0386B00DAE6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377F58731FE0386B00DAE6CC /* Assets.xcassets */; };
+		377F58771FE0386B00DAE6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377F58751FE0386B00DAE6CC /* LaunchScreen.storyboard */; };
+		377F58821FE0386B00DAE6CC /* NukkadAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F58811FE0386B00DAE6CC /* NukkadAppTests.swift */; };
+		377F588D1FE0386B00DAE6CC /* NukkadAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F588C1FE0386B00DAE6CC /* NukkadAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		377F587E1FE0386B00DAE6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 377F58611FE0386B00DAE6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 377F58681FE0386B00DAE6CC;
+			remoteInfo = NukkadApp;
+		};
+		377F58891FE0386B00DAE6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 377F58611FE0386B00DAE6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 377F58681FE0386B00DAE6CC;
+			remoteInfo = NukkadApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		377F58691FE0386B00DAE6CC /* NukkadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NukkadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		377F586C1FE0386B00DAE6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		377F586E1FE0386B00DAE6CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		377F58711FE0386B00DAE6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		377F58731FE0386B00DAE6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		377F58761FE0386B00DAE6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		377F58781FE0386B00DAE6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		377F587D1FE0386B00DAE6CC /* NukkadAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NukkadAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		377F58811FE0386B00DAE6CC /* NukkadAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NukkadAppTests.swift; sourceTree = "<group>"; };
+		377F58831FE0386B00DAE6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		377F58881FE0386B00DAE6CC /* NukkadAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NukkadAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		377F588C1FE0386B00DAE6CC /* NukkadAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NukkadAppUITests.swift; sourceTree = "<group>"; };
+		377F588E1FE0386B00DAE6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		377F58661FE0386B00DAE6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		377F587A1FE0386B00DAE6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		377F58851FE0386B00DAE6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		377F58601FE0386B00DAE6CC = {
+			isa = PBXGroup;
+			children = (
+				377F586B1FE0386B00DAE6CC /* NukkadApp */,
+				377F58801FE0386B00DAE6CC /* NukkadAppTests */,
+				377F588B1FE0386B00DAE6CC /* NukkadAppUITests */,
+				377F586A1FE0386B00DAE6CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		377F586A1FE0386B00DAE6CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				377F58691FE0386B00DAE6CC /* NukkadApp.app */,
+				377F587D1FE0386B00DAE6CC /* NukkadAppTests.xctest */,
+				377F58881FE0386B00DAE6CC /* NukkadAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		377F586B1FE0386B00DAE6CC /* NukkadApp */ = {
+			isa = PBXGroup;
+			children = (
+				377F586C1FE0386B00DAE6CC /* AppDelegate.swift */,
+				377F586E1FE0386B00DAE6CC /* ViewController.swift */,
+				377F58701FE0386B00DAE6CC /* Main.storyboard */,
+				377F58731FE0386B00DAE6CC /* Assets.xcassets */,
+				377F58751FE0386B00DAE6CC /* LaunchScreen.storyboard */,
+				377F58781FE0386B00DAE6CC /* Info.plist */,
+			);
+			path = NukkadApp;
+			sourceTree = "<group>";
+		};
+		377F58801FE0386B00DAE6CC /* NukkadAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				377F58811FE0386B00DAE6CC /* NukkadAppTests.swift */,
+				377F58831FE0386B00DAE6CC /* Info.plist */,
+			);
+			path = NukkadAppTests;
+			sourceTree = "<group>";
+		};
+		377F588B1FE0386B00DAE6CC /* NukkadAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				377F588C1FE0386B00DAE6CC /* NukkadAppUITests.swift */,
+				377F588E1FE0386B00DAE6CC /* Info.plist */,
+			);
+			path = NukkadAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		377F58681FE0386B00DAE6CC /* NukkadApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 377F58911FE0386B00DAE6CC /* Build configuration list for PBXNativeTarget "NukkadApp" */;
+			buildPhases = (
+				377F58651FE0386B00DAE6CC /* Sources */,
+				377F58661FE0386B00DAE6CC /* Frameworks */,
+				377F58671FE0386B00DAE6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NukkadApp;
+			productName = NukkadApp;
+			productReference = 377F58691FE0386B00DAE6CC /* NukkadApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		377F587C1FE0386B00DAE6CC /* NukkadAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 377F58941FE0386B00DAE6CC /* Build configuration list for PBXNativeTarget "NukkadAppTests" */;
+			buildPhases = (
+				377F58791FE0386B00DAE6CC /* Sources */,
+				377F587A1FE0386B00DAE6CC /* Frameworks */,
+				377F587B1FE0386B00DAE6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				377F587F1FE0386B00DAE6CC /* PBXTargetDependency */,
+			);
+			name = NukkadAppTests;
+			productName = NukkadAppTests;
+			productReference = 377F587D1FE0386B00DAE6CC /* NukkadAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		377F58871FE0386B00DAE6CC /* NukkadAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 377F58971FE0386B00DAE6CC /* Build configuration list for PBXNativeTarget "NukkadAppUITests" */;
+			buildPhases = (
+				377F58841FE0386B00DAE6CC /* Sources */,
+				377F58851FE0386B00DAE6CC /* Frameworks */,
+				377F58861FE0386B00DAE6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				377F588A1FE0386B00DAE6CC /* PBXTargetDependency */,
+			);
+			name = NukkadAppUITests;
+			productName = NukkadAppUITests;
+			productReference = 377F58881FE0386B00DAE6CC /* NukkadAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		377F58611FE0386B00DAE6CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = systimanx;
+				TargetAttributes = {
+					377F58681FE0386B00DAE6CC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					377F587C1FE0386B00DAE6CC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 377F58681FE0386B00DAE6CC;
+					};
+					377F58871FE0386B00DAE6CC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 377F58681FE0386B00DAE6CC;
+					};
+				};
+			};
+			buildConfigurationList = 377F58641FE0386B00DAE6CC /* Build configuration list for PBXProject "NukkadApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 377F58601FE0386B00DAE6CC;
+			productRefGroup = 377F586A1FE0386B00DAE6CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				377F58681FE0386B00DAE6CC /* NukkadApp */,
+				377F587C1FE0386B00DAE6CC /* NukkadAppTests */,
+				377F58871FE0386B00DAE6CC /* NukkadAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		377F58671FE0386B00DAE6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377F58771FE0386B00DAE6CC /* LaunchScreen.storyboard in Resources */,
+				377F58741FE0386B00DAE6CC /* Assets.xcassets in Resources */,
+				377F58721FE0386B00DAE6CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		377F587B1FE0386B00DAE6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		377F58861FE0386B00DAE6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		377F58651FE0386B00DAE6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377F586F1FE0386B00DAE6CC /* ViewController.swift in Sources */,
+				377F586D1FE0386B00DAE6CC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		377F58791FE0386B00DAE6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377F58821FE0386B00DAE6CC /* NukkadAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		377F58841FE0386B00DAE6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377F588D1FE0386B00DAE6CC /* NukkadAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		377F587F1FE0386B00DAE6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 377F58681FE0386B00DAE6CC /* NukkadApp */;
+			targetProxy = 377F587E1FE0386B00DAE6CC /* PBXContainerItemProxy */;
+		};
+		377F588A1FE0386B00DAE6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 377F58681FE0386B00DAE6CC /* NukkadApp */;
+			targetProxy = 377F58891FE0386B00DAE6CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		377F58701FE0386B00DAE6CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				377F58711FE0386B00DAE6CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		377F58751FE0386B00DAE6CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				377F58761FE0386B00DAE6CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		377F588F1FE0386B00DAE6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		377F58901FE0386B00DAE6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		377F58921FE0386B00DAE6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NukkadApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.systimanx..NukkadApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		377F58931FE0386B00DAE6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NukkadApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.systimanx..NukkadApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		377F58951FE0386B00DAE6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NukkadAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.systimanx..NukkadAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NukkadApp.app/NukkadApp";
+			};
+			name = Debug;
+		};
+		377F58961FE0386B00DAE6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NukkadAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.systimanx..NukkadAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NukkadApp.app/NukkadApp";
+			};
+			name = Release;
+		};
+		377F58981FE0386B00DAE6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NukkadAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.systimanx..NukkadAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NukkadApp;
+			};
+			name = Debug;
+		};
+		377F58991FE0386B00DAE6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NukkadAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.systimanx..NukkadAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NukkadApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		377F58641FE0386B00DAE6CC /* Build configuration list for PBXProject "NukkadApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377F588F1FE0386B00DAE6CC /* Debug */,
+				377F58901FE0386B00DAE6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		377F58911FE0386B00DAE6CC /* Build configuration list for PBXNativeTarget "NukkadApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377F58921FE0386B00DAE6CC /* Debug */,
+				377F58931FE0386B00DAE6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		377F58941FE0386B00DAE6CC /* Build configuration list for PBXNativeTarget "NukkadAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377F58951FE0386B00DAE6CC /* Debug */,
+				377F58961FE0386B00DAE6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		377F58971FE0386B00DAE6CC /* Build configuration list for PBXNativeTarget "NukkadAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377F58981FE0386B00DAE6CC /* Debug */,
+				377F58991FE0386B00DAE6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 377F58611FE0386B00DAE6CC /* Project object */;
+}
