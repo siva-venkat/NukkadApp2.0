@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		376276F2200F108B0000206E /* ShippingAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376276F1200F108B0000206E /* ShippingAddressViewController.swift */; };
 		377F586D1FE0386B00DAE6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F586C1FE0386B00DAE6CC /* AppDelegate.swift */; };
 		377F586F1FE0386B00DAE6CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F586E1FE0386B00DAE6CC /* ViewController.swift */; };
 		377F58721FE0386B00DAE6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377F58701FE0386B00DAE6CC /* Main.storyboard */; };
@@ -14,6 +15,16 @@
 		377F58771FE0386B00DAE6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377F58751FE0386B00DAE6CC /* LaunchScreen.storyboard */; };
 		377F58821FE0386B00DAE6CC /* NukkadAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F58811FE0386B00DAE6CC /* NukkadAppTests.swift */; };
 		377F588D1FE0386B00DAE6CC /* NukkadAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F588C1FE0386B00DAE6CC /* NukkadAppUITests.swift */; };
+		3786E50D1FE2532100328116 /* APPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3786E50C1FE2532100328116 /* APPViewController.swift */; };
+		3786E50F1FE2617600328116 /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3786E50E1FE2617600328116 /* HamburgerViewController.swift */; };
+		378E1A891FE2A4FC0004FFCC /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E1A881FE2A4FC0004FFCC /* ProductListViewController.swift */; };
+		379D654F2004BE7500408E12 /* CartListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D654E2004BE7500408E12 /* CartListViewController.swift */; };
+		379D65512004F8BC00408E12 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D65502004F8BC00408E12 /* LoginViewController.swift */; };
+		37A1C87C2003A57B00DF6459 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A1C87B2003A57B00DF6459 /* ProductDetailsViewController.swift */; };
+		37AA16B72007950C00DF4061 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA16B62007950C00DF4061 /* SignupViewController.swift */; };
+		37AA32791FE0FA8300215A4E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA32781FE0FA8300215A4E /* DashboardViewController.swift */; };
+		37B1C29320062ECF004888A0 /* CategoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1C29220062ECF004888A0 /* CategoriesListViewController.swift */; };
+		EAE12468B4792BCC031BA369 /* Pods_NukkadApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F59ECB6B42E9A158E7785F /* Pods_NukkadApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E268D0EDB0BE9B1E27BC18E /* Pods-NukkadApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NukkadApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NukkadApp/Pods-NukkadApp.release.xcconfig"; sourceTree = "<group>"; };
+		376276F1200F108B0000206E /* ShippingAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingAddressViewController.swift; sourceTree = "<group>"; };
 		377F58691FE0386B00DAE6CC /* NukkadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NukkadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		377F586C1FE0386B00DAE6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		377F586E1FE0386B00DAE6CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +60,17 @@
 		377F58881FE0386B00DAE6CC /* NukkadAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NukkadAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		377F588C1FE0386B00DAE6CC /* NukkadAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NukkadAppUITests.swift; sourceTree = "<group>"; };
 		377F588E1FE0386B00DAE6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3786E50C1FE2532100328116 /* APPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPViewController.swift; sourceTree = "<group>"; };
+		3786E50E1FE2617600328116 /* HamburgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
+		378E1A881FE2A4FC0004FFCC /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		379D654E2004BE7500408E12 /* CartListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartListViewController.swift; sourceTree = "<group>"; };
+		379D65502004F8BC00408E12 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		37A1C87B2003A57B00DF6459 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		37AA16B62007950C00DF4061 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		37AA32781FE0FA8300215A4E /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		37B1C29220062ECF004888A0 /* CategoriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListViewController.swift; sourceTree = "<group>"; };
+		89F59ECB6B42E9A158E7785F /* Pods_NukkadApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NukkadApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD98FDA03196D71E6E97AB0C /* Pods-NukkadApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NukkadApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NukkadApp/Pods-NukkadApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE12468B4792BCC031BA369 /* Pods_NukkadApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1823390DC537577196C9CA92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89F59ECB6B42E9A158E7785F /* Pods_NukkadApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		377F58601FE0386B00DAE6CC = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +114,8 @@
 				377F58801FE0386B00DAE6CC /* NukkadAppTests */,
 				377F588B1FE0386B00DAE6CC /* NukkadAppUITests */,
 				377F586A1FE0386B00DAE6CC /* Products */,
+				C38B34F97AD5764E15DFD8A1 /* Pods */,
+				1823390DC537577196C9CA92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,7 +134,17 @@
 			children = (
 				377F586C1FE0386B00DAE6CC /* AppDelegate.swift */,
 				377F586E1FE0386B00DAE6CC /* ViewController.swift */,
+				378E1A881FE2A4FC0004FFCC /* ProductListViewController.swift */,
 				377F58701FE0386B00DAE6CC /* Main.storyboard */,
+				376276F1200F108B0000206E /* ShippingAddressViewController.swift */,
+				37AA16B62007950C00DF4061 /* SignupViewController.swift */,
+				37B1C29220062ECF004888A0 /* CategoriesListViewController.swift */,
+				379D65502004F8BC00408E12 /* LoginViewController.swift */,
+				379D654E2004BE7500408E12 /* CartListViewController.swift */,
+				37A1C87B2003A57B00DF6459 /* ProductDetailsViewController.swift */,
+				37AA32781FE0FA8300215A4E /* DashboardViewController.swift */,
+				3786E50C1FE2532100328116 /* APPViewController.swift */,
+				3786E50E1FE2617600328116 /* HamburgerViewController.swift */,
 				377F58731FE0386B00DAE6CC /* Assets.xcassets */,
 				377F58751FE0386B00DAE6CC /* LaunchScreen.storyboard */,
 				377F58781FE0386B00DAE6CC /* Info.plist */,
@@ -125,6 +170,15 @@
 			path = NukkadAppUITests;
 			sourceTree = "<group>";
 		};
+		C38B34F97AD5764E15DFD8A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD98FDA03196D71E6E97AB0C /* Pods-NukkadApp.debug.xcconfig */,
+				2E268D0EDB0BE9B1E27BC18E /* Pods-NukkadApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 377F58911FE0386B00DAE6CC /* Build configuration list for PBXNativeTarget "NukkadApp" */;
 			buildPhases = (
+				D036ADA6E7732B4C26B84FE8 /* [CP] Check Pods Manifest.lock */,
 				377F58651FE0386B00DAE6CC /* Sources */,
 				377F58661FE0386B00DAE6CC /* Frameworks */,
 				377F58671FE0386B00DAE6CC /* Resources */,
+				99315C3EDB39D3F0E70F39CE /* [CP] Embed Pods Frameworks */,
+				69E159683F4069DF2F16E885 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +311,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		69E159683F4069DF2F16E885 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NukkadApp/Pods-NukkadApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99315C3EDB39D3F0E70F39CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NukkadApp/Pods-NukkadApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NukkadApp/Pods-NukkadApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D036ADA6E7732B4C26B84FE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NukkadApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		377F58651FE0386B00DAE6CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B1C29320062ECF004888A0 /* CategoriesListViewController.swift in Sources */,
+				379D65512004F8BC00408E12 /* LoginViewController.swift in Sources */,
+				37AA16B72007950C00DF4061 /* SignupViewController.swift in Sources */,
+				37A1C87C2003A57B00DF6459 /* ProductDetailsViewController.swift in Sources */,
 				377F586F1FE0386B00DAE6CC /* ViewController.swift in Sources */,
+				376276F2200F108B0000206E /* ShippingAddressViewController.swift in Sources */,
+				37AA32791FE0FA8300215A4E /* DashboardViewController.swift in Sources */,
+				3786E50D1FE2532100328116 /* APPViewController.swift in Sources */,
+				379D654F2004BE7500408E12 /* CartListViewController.swift in Sources */,
+				3786E50F1FE2617600328116 /* HamburgerViewController.swift in Sources */,
+				378E1A891FE2A4FC0004FFCC /* ProductListViewController.swift in Sources */,
 				377F586D1FE0386B00DAE6CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +551,7 @@
 		};
 		377F58921FE0386B00DAE6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD98FDA03196D71E6E97AB0C /* Pods-NukkadApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +566,7 @@
 		};
 		377F58931FE0386B00DAE6CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E268D0EDB0BE9B1E27BC18E /* Pods-NukkadApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

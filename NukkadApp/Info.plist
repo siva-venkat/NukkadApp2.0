@@ -34,6 +34,20 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NASettings</key>
+	<dict>
+		<key>general</key>
+		<dict/>
+		<key>base_url</key>
+		<string>http://systimanx.xyz/nukkad-shop/public/api/</string>
+		<key>staging_url</key>
+		<string>http://systimanx.xyz/nukkad-shop/public/api/</string>
+		<key>endpoint</key>
+		<dict>
+			<key>login</key>
+			<string>login</string>
+		</dict>
+	</dict>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
