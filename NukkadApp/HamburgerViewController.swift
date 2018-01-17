@@ -10,12 +10,6 @@ import UIKit
 
 class HamburgerViewController: APPViewController {
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-       
-    }
-
-
+    
+    
 }
