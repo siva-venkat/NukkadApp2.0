@@ -11,13 +11,9 @@ import UIKit
 
 class DashboardCell: UICollectionViewCell {
     
-   
     @IBOutlet weak var productImg: UIImageView!
-    
     @IBOutlet weak var proName: UILabel!
     @IBOutlet weak var offLbl: UILabel!
-    
-  
     @IBOutlet weak var waitLbl: UILabel!
     @IBOutlet weak var priceLbl: UILabel!
     @IBOutlet weak var brandImg: UIImageView!
@@ -26,24 +22,16 @@ class DashboardCell: UICollectionViewCell {
 
  class DashboardViewController: APPViewController,UICollectionViewDelegate,UICollectionViewDataSource{
    
-    
     @IBOutlet weak var scrolView: UIScrollView!
-   
     @IBOutlet weak var collectionAView: UICollectionView!
-    
     @IBOutlet weak var collectionBView: UICollectionView!
-    
-    
-    
     @IBOutlet weak var brandImg: UIImageView!
-    
     @IBOutlet weak var oilBtn: UIButton!
-    
     @IBOutlet weak var vegBtn: UIButton!
-    
     @IBOutlet weak var drinksBtn: UIButton!
-    
     @IBOutlet weak var greenBtn: UIButton!
+    
+    
     let picksCell = "pickId"
     let brandCell = "brandId"
     
@@ -90,6 +78,13 @@ class DashboardCell: UICollectionViewCell {
          return cellB
         }
     }
+    override func leftBarButtonAction() {
+        if let count = self.navigationController?.viewControllers.count, count > 1 {
+            return super.leftBarButtonAction()
+        } else {
+            self.showHamburger()
+        }
+    }
     func setShadowForButton(button: UIButton!){
         button.layer.shadowOffset = CGSize(width: 0.0, height:2.0)
         button.layer.masksToBounds = false
@@ -104,6 +99,7 @@ class DashboardCell: UICollectionViewCell {
     override func rightBarButtonconfig() -> (barButtonType?, Any?) {
         return (.kImage,#imageLiteral(resourceName: "ic_cartcount"))
     }
+    
 
 }
 

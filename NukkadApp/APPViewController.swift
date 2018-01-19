@@ -28,6 +28,15 @@ extension NSObject {
             return type(of: self).topViewController()
     }
 }
+extension UIViewController {
+    static func instance() -> UIViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:String(describing: self))
+    }
+    
+    func showHamburger() {
+        HamburgerViewController.sharedController.show(show: true)
+    }
+}
 class APPViewController: UIViewController {
  
     override func viewDidLoad() {
@@ -74,6 +83,7 @@ class APPViewController: UIViewController {
             self.dismiss(animated: true, completion: nil)
         }
     }
+    
     func leftBarButtonConfig() -> (barButtonType?, Any?) {
         return (.kEmpty,nil)
     }
@@ -112,7 +122,6 @@ class APPViewController: UIViewController {
     }
     
     
-
     class APPTableViewController: UITableViewController {
         
         override func viewDidLoad() {

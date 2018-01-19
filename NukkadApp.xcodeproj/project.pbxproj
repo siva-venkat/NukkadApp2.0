@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370818992011D28F0006C16E /* sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370818982011D28F0006C16E /* sections.swift */; };
 		376276F2200F108B0000206E /* ShippingAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376276F1200F108B0000206E /* ShippingAddressViewController.swift */; };
 		377F586D1FE0386B00DAE6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F586C1FE0386B00DAE6CC /* AppDelegate.swift */; };
 		377F586F1FE0386B00DAE6CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F586E1FE0386B00DAE6CC /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		2E268D0EDB0BE9B1E27BC18E /* Pods-NukkadApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NukkadApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NukkadApp/Pods-NukkadApp.release.xcconfig"; sourceTree = "<group>"; };
+		370818982011D28F0006C16E /* sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sections.swift; sourceTree = "<group>"; };
 		376276F1200F108B0000206E /* ShippingAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingAddressViewController.swift; sourceTree = "<group>"; };
 		377F58691FE0386B00DAE6CC /* NukkadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NukkadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		377F586C1FE0386B00DAE6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				376276F1200F108B0000206E /* ShippingAddressViewController.swift */,
 				37AA16B62007950C00DF4061 /* SignupViewController.swift */,
 				37B1C29220062ECF004888A0 /* CategoriesListViewController.swift */,
+				370818982011D28F0006C16E /* sections.swift */,
 				379D65502004F8BC00408E12 /* LoginViewController.swift */,
 				379D654E2004BE7500408E12 /* CartListViewController.swift */,
 				37A1C87B2003A57B00DF6459 /* ProductDetailsViewController.swift */,
@@ -378,6 +381,7 @@
 			files = (
 				37B1C29320062ECF004888A0 /* CategoriesListViewController.swift in Sources */,
 				379D65512004F8BC00408E12 /* LoginViewController.swift in Sources */,
+				370818992011D28F0006C16E /* sections.swift in Sources */,
 				37AA16B72007950C00DF4061 /* SignupViewController.swift in Sources */,
 				37A1C87C2003A57B00DF6459 /* ProductDetailsViewController.swift in Sources */,
 				377F586F1FE0386B00DAE6CC /* ViewController.swift in Sources */,
