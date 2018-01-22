@@ -6,5 +6,6 @@ target 'NukkadApp' do
   use_frameworks!
 
    pod 'PromiseKit'
+   pod 'ActionSheetPicker-3.0'
 
 end
