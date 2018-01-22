@@ -21,14 +21,6 @@ class ProductDetailsViewController: APPViewController {
     @IBOutlet weak var plusBtn: UIButton!
     
     @IBOutlet weak var offersPopupView: UIView!
-    
-   
-    
-//    {
-//        didSet {
-//            countDisplayLbl.text = "\(cartCount)"
-//        }
-//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,31 +30,26 @@ class ProductDetailsViewController: APPViewController {
     
     @IBAction func minusAction(_ sender: Any) {
 
-//    cartCount  = minusCount - 1
-
     }
     
     @IBAction func plusAction(_ sender: UIButton) {
     
-//         minusCount += 1
-}
+    }
+    
     override  func leftBarButtonConfig() -> (barButtonType?, Any?) {
         return (.kImage,#imageLiteral(resourceName: "ic_back"))
     }
+    
     override func rightBarButtonconfig() -> (barButtonType?, Any?) {
         return (.kImage,#imageLiteral(resourceName: "ic_cartcount"))
     }
     
     @IBAction func offersAction(_ sender: Any) {
-    
-    
         offersPopupView.isHidden = false
     }
     
     @IBAction func popupCloseAction(_ sender: Any) {
-        
          offersPopupView.isHidden = true
-        
     }
 }
 

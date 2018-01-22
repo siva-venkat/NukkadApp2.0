@@ -9,10 +9,7 @@
 import UIKit
 
 class ViewController: APPViewController {
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
    
@@ -20,7 +17,7 @@ class ViewController: APPViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
- self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
 }
