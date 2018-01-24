@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import PromiseKit
+import PKHUD
 
 enum barButtonType {
     case kEmpty
@@ -19,22 +21,36 @@ extension NSObject {
     static func topViewController() -> UIViewController {
         var topViewController = UIApplication.shared.keyWindow?.rootViewController
         while topViewController?.presentedViewController != nil {
-        topViewController = topViewController?.presentedViewController
-    }
+            topViewController = topViewController?.presentedViewController
+        }
         return topViewController!
-}
-    
-           func topViewController() -> UIViewController {
-            return type(of: self).topViewController()
-    }
-}
-extension UIViewController {
-    static func instance() -> UIViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:String(describing: self))
     }
     
-    func showHamburger() {
-        HamburgerViewController.sharedController.show(show: true)
+    func topViewController() -> UIViewController {
+        return type(of: self).topViewController()
+    }
+    
+    static func showLoading(show:Bool){
+        if show {
+            PKHUD.sharedHUD.contentView = PKHUDProgressView()
+            PKHUD.sharedHUD.show()
+        } else {
+            PKHUD.sharedHUD.hide()
+        }
+    }
+    
+    func showLoading(show:Bool) {
+        return type(of: self).showLoading(show:show)
+    }
+    
+    func showMessage(message:String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        self.topViewController().present(alert, animated: true, completion:nil)
+        alert.addAction(UIAlertAction(title: "Done", style: .cancel, handler: nil))
+    }
+    
+    func showToast(message:String) {
+        iStatusNotifier.showMessage(message)
     }
 }
 class APPViewController: UIViewController {
@@ -122,6 +138,34 @@ class APPViewController: UIViewController {
     }
     
     
+    func prepareUIForService(promise: Promise<Any>) -> Promise<Any> {
+        showLoading(show: true)
+        return promise.catch(execute: { error in
+            self.showMessage(message: error.localizedDescription)
+        }).always {
+            self.showLoading(show: false)
+        }
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+}
+extension String {
+    func validEmail() -> Bool {
+        let predicate = NSPredicate(format:"SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
+        return predicate.evaluate(with: self)
+    }
+}
+extension UIViewController {
+    static func instance() -> UIViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:String(describing: self))
+    }
+    
+    func showHamburger() {
+        HamburgerViewController.sharedController.show(show: true)
+    }
+}
+
     class APPTableViewController: UITableViewController {
         
         override func viewDidLoad() {
@@ -147,4 +191,4 @@ class APPViewController: UIViewController {
             self.navigationBar.isTranslucent = false
         }
 }
-}
+

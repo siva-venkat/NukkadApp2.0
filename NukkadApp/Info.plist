@@ -2,6 +2,41 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>LSApplicationCategoryType</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>systimanx.xyz</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<false/>
+				<key>NSExceptionMinimumTLSVersion</key>
+				<string>TLSv1.0</string>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>CFBundleDisplayName</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -17,7 +52,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>10</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -37,15 +72,20 @@
 	<key>NASettings</key>
 	<dict>
 		<key>general</key>
-		<dict/>
-		<key>base_url</key>
-		<string>http://systimanx.xyz/nukkad-shop/public/api/</string>
-		<key>staging_url</key>
-		<string>http://systimanx.xyz/nukkad-shop/public/api/</string>
+		<dict>
+			<key>staging_url</key>
+			<string>http://systimanx.xyz/nukkad-shop/public/api/</string>
+			<key>base_url</key>
+			<string>http://systimanx.xyz/nukkad-shop/public/api/</string>
+		</dict>
 		<key>endpoint</key>
 		<dict>
 			<key>login</key>
 			<string>login</string>
+			<key>register</key>
+			<string>register</string>
+			<key>StoreFcm</key>
+			<string>StoreFcm</string>
 		</dict>
 	</dict>
 	<key>UISupportedInterfaceOrientations~ipad</key>

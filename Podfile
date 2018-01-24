@@ -7,5 +7,7 @@ target 'NukkadApp' do
 
    pod 'PromiseKit'
    pod 'ActionSheetPicker-3.0'
+   pod 'PKHUD', '~> 5.0'
+
 
 end

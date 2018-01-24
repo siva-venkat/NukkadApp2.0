@@ -82,7 +82,7 @@ class DashboardCell: UICollectionViewCell {
         if let count = self.navigationController?.viewControllers.count, count > 1 {
             return super.leftBarButtonAction()
         } else {
-            self.showHamburger()
+            showHamburger()
         }
     }
     func setShadowForButton(button: UIButton!){

@@ -19,6 +19,11 @@
 		3786E50D1FE2532100328116 /* APPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3786E50C1FE2532100328116 /* APPViewController.swift */; };
 		3786E50F1FE2617600328116 /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3786E50E1FE2617600328116 /* HamburgerViewController.swift */; };
 		378E1A891FE2A4FC0004FFCC /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E1A881FE2A4FC0004FFCC /* ProductListViewController.swift */; };
+		379342A4201855BB00EBD3E0 /* NAConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379342A3201855BB00EBD3E0 /* NAConnection.swift */; };
+		379342A72018563300EBD3E0 /* APPConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379342A62018563300EBD3E0 /* APPConnection.swift */; };
+		379342A920186AB100EBD3E0 /* APPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379342A820186AB100EBD3E0 /* APPModel.swift */; };
+		379342AC20186B4000EBD3E0 /* NAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379342AB20186B4000EBD3E0 /* NAModel.swift */; };
+		379342B020187B9B00EBD3E0 /* iStatusNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 379342AE20187B9A00EBD3E0 /* iStatusNotifier.m */; };
 		379D654F2004BE7500408E12 /* CartListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D654E2004BE7500408E12 /* CartListViewController.swift */; };
 		379D65512004F8BC00408E12 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D65502004F8BC00408E12 /* LoginViewController.swift */; };
 		37A1C87C2003A57B00DF6459 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A1C87B2003A57B00DF6459 /* ProductDetailsViewController.swift */; };
@@ -65,6 +70,13 @@
 		3786E50C1FE2532100328116 /* APPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPViewController.swift; sourceTree = "<group>"; };
 		3786E50E1FE2617600328116 /* HamburgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
 		378E1A881FE2A4FC0004FFCC /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		379342A3201855BB00EBD3E0 /* NAConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAConnection.swift; sourceTree = "<group>"; };
+		379342A62018563300EBD3E0 /* APPConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPConnection.swift; sourceTree = "<group>"; };
+		379342A820186AB100EBD3E0 /* APPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPModel.swift; sourceTree = "<group>"; };
+		379342AB20186B4000EBD3E0 /* NAModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAModel.swift; sourceTree = "<group>"; };
+		379342AD20187B9900EBD3E0 /* NukkadApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NukkadApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		379342AE20187B9A00EBD3E0 /* iStatusNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iStatusNotifier.m; sourceTree = "<group>"; };
+		379342AF20187B9B00EBD3E0 /* iStatusNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iStatusNotifier.h; sourceTree = "<group>"; };
 		379D654E2004BE7500408E12 /* CartListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartListViewController.swift; sourceTree = "<group>"; };
 		379D65502004F8BC00408E12 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		37A1C87B2003A57B00DF6459 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
@@ -112,12 +124,17 @@
 		377F58601FE0386B00DAE6CC = {
 			isa = PBXGroup;
 			children = (
+				379342AF20187B9B00EBD3E0 /* iStatusNotifier.h */,
+				379342AE20187B9A00EBD3E0 /* iStatusNotifier.m */,
+				379342A5201855F100EBD3E0 /* Collection */,
+				379342A02018545600EBD3E0 /* Connection */,
 				377F586B1FE0386B00DAE6CC /* NukkadApp */,
 				377F58801FE0386B00DAE6CC /* NukkadAppTests */,
 				377F588B1FE0386B00DAE6CC /* NukkadAppUITests */,
 				377F586A1FE0386B00DAE6CC /* Products */,
 				C38B34F97AD5764E15DFD8A1 /* Pods */,
 				1823390DC537577196C9CA92 /* Frameworks */,
+				379342AD20187B9900EBD3E0 /* NukkadApp-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +151,7 @@
 		377F586B1FE0386B00DAE6CC /* NukkadApp */ = {
 			isa = PBXGroup;
 			children = (
+				379342AA20186B1900EBD3E0 /* Model */,
 				377F586C1FE0386B00DAE6CC /* AppDelegate.swift */,
 				377F586E1FE0386B00DAE6CC /* ViewController.swift */,
 				378E1A881FE2A4FC0004FFCC /* ProductListViewController.swift */,
@@ -171,6 +189,31 @@
 				377F588E1FE0386B00DAE6CC /* Info.plist */,
 			);
 			path = NukkadAppUITests;
+			sourceTree = "<group>";
+		};
+		379342A02018545600EBD3E0 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				379342A3201855BB00EBD3E0 /* NAConnection.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		379342A5201855F100EBD3E0 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				379342A62018563300EBD3E0 /* APPConnection.swift */,
+				379342A820186AB100EBD3E0 /* APPModel.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		379342AA20186B1900EBD3E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				379342AB20186B4000EBD3E0 /* NAModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C38B34F97AD5764E15DFD8A1 /* Pods */ = {
@@ -253,6 +296,7 @@
 				TargetAttributes = {
 					377F58681FE0386B00DAE6CC = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Manual;
 					};
 					377F587C1FE0386B00DAE6CC = {
@@ -338,11 +382,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NukkadApp/Pods-NukkadApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,13 +426,18 @@
 				370818992011D28F0006C16E /* sections.swift in Sources */,
 				37AA16B72007950C00DF4061 /* SignupViewController.swift in Sources */,
 				37A1C87C2003A57B00DF6459 /* ProductDetailsViewController.swift in Sources */,
+				379342B020187B9B00EBD3E0 /* iStatusNotifier.m in Sources */,
 				377F586F1FE0386B00DAE6CC /* ViewController.swift in Sources */,
 				376276F2200F108B0000206E /* ShippingAddressViewController.swift in Sources */,
 				37AA32791FE0FA8300215A4E /* DashboardViewController.swift in Sources */,
+				379342AC20186B4000EBD3E0 /* NAModel.swift in Sources */,
 				3786E50D1FE2532100328116 /* APPViewController.swift in Sources */,
 				379D654F2004BE7500408E12 /* CartListViewController.swift in Sources */,
 				3786E50F1FE2617600328116 /* HamburgerViewController.swift in Sources */,
+				379342A920186AB100EBD3E0 /* APPModel.swift in Sources */,
+				379342A72018563300EBD3E0 /* APPConnection.swift in Sources */,
 				378E1A891FE2A4FC0004FFCC /* ProductListViewController.swift in Sources */,
+				379342A4201855BB00EBD3E0 /* NAConnection.swift in Sources */,
 				377F586D1FE0386B00DAE6CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,6 +605,7 @@
 			baseConfigurationReference = CD98FDA03196D71E6E97AB0C /* Pods-NukkadApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NukkadApp/Info.plist;
@@ -562,6 +614,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.systimanx..NukkadApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NukkadApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -572,6 +626,7 @@
 			baseConfigurationReference = 2E268D0EDB0BE9B1E27BC18E /* Pods-NukkadApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NukkadApp/Info.plist;
@@ -580,6 +635,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.systimanx..NukkadApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NukkadApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

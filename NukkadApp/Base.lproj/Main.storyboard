@@ -1257,6 +1257,9 @@
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="forgotPassword:" destination="jwb-au-Efy" eventType="touchUpInside" id="wd4-LA-ybT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP5-C2-xFG">
                                 <rect key="frame" x="20" y="273.5" width="48" height="33"/>
@@ -1285,6 +1288,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 </variation>
                                 <connections>
+                                    <action selector="loginAction:" destination="jwb-au-Efy" eventType="touchUpInside" id="it8-8e-6c9"/>
                                     <segue destination="Ndw-1O-8yr" kind="show" id="DUd-0H-jhb"/>
                                 </connections>
                             </button>
@@ -1318,6 +1322,10 @@
                             <constraint firstItem="Vnh-mi-V7Z" firstAttribute="top" secondItem="9ht-7j-CqU" secondAttribute="bottom" id="z1s-zh-SPK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="3BD-2A-I8P" id="mMY-qy-iuh"/>
+                        <outlet property="passwordTextField" destination="Woa-jh-BR4" id="VN6-hu-8VB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qOU-fg-MN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

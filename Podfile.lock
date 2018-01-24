@@ -1,5 +1,6 @@
 PODS:
   - ActionSheetPicker-3.0 (2.2.0)
+  - PKHUD (5.0.0)
   - PromiseKit (4.5.0):
     - PromiseKit/Foundation (= 4.5.0)
     - PromiseKit/QuartzCore (= 4.5.0)
@@ -14,12 +15,14 @@ PODS:
 
 DEPENDENCIES:
   - ActionSheetPicker-3.0
+  - PKHUD (~> 5.0)
   - PromiseKit
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
+  PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
   PromiseKit: 9c1d9f6d7b65e3951a90bea7f407c56972be5d8e
 
-PODFILE CHECKSUM: 65631eeb5eec8913ded28aa5143a4ab511617b5b
+PODFILE CHECKSUM: 484320cf40d18d51a6ae13df267823af9e1e6328
 
 COCOAPODS: 1.3.1

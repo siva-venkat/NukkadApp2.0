@@ -22,8 +22,8 @@ class HamburgerViewController: APPViewController,UITableViewDelegate,UITableView
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
   
   static let sharedController = HamburgerViewController.instance() as! HamburgerViewController
-   
-        
+
+    
         var labelArray = ["NAME","HOME","MY TRIPS","PLAN A TRIP","MY PROFILE","RATE APP","LOGOUT"]
 
         let cellId = "HamburgerCell"
