@@ -40,13 +40,23 @@ class NAConnection:APPConnection{
             return Promise(value:dict)
         })
     }
-//    static func forgotPassword(email:String) -> Promise<String> {
-//        let config = APPUrlConfig(endpoint:"forgot_password")
-//        config.parameters = ["user": ["email":email]]
-//        return self.makeConnection(config: config).then(execute: { dict -> Promise<String> in
-//            return Promise(value:dict["message"] as! String)
-//        })
-//    }
-//   
+    static func forgotPassword(email:String) -> Promise<String> {
+        let config = APPUrlConfig(endpoint:"forgot_password")
+        config.parameters = ["user": ["email":email]]
+        return self.makeConnection(config: config).then(execute: { dict -> Promise<String> in
+            return Promise(value:dict["message"] as! String)
+        })
+    }
+    static func register(user:NAUser) -> Promise<String> {
+        let config = APPUrlConfig(endpoint:"register")
+        config.parameters = ["user": ["first_name": user.firstName!, "last_name": user.lastName!,"mobile":user.mobileNumber!,"email":user.email!,"password":user.password!,"os_name": user.osName!, "os_version": user.osVersion!]]
+        return self.makeConnection(config: config).then(execute: { dict -> Promise<String> in
+            let user = NAUser.fromDict(dict: dict["user_data"] as! NSDictionary)
+            user.token = connection.token
+            user.save()
+            return Promise(value:dict["message"] as! String)
+        })
+    }
+    
 
 }

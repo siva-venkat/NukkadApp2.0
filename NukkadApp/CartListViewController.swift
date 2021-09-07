@@ -11,10 +11,7 @@ import UIKit
 class CartListCell: UITableViewCell {
     
     @IBOutlet weak var productImg: UIImageView!
-   
     @IBOutlet weak var titleLbl: UILabel!
-    
-    @IBOutlet weak var categoryTableView: UITableView!
     
 }
 
@@ -30,8 +27,6 @@ class CartListViewController: APPViewController,UITableViewDelegate,UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 }
-    
-    
     //MARK UITableViewDelgate Methods
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -49,7 +44,6 @@ class CartListViewController: APPViewController,UITableViewDelegate,UITableViewD
             cell.titleLbl?.text = ProductNames[indexPath.row]
             cell.productImg?.image = UIImage(named:ProductImages[indexPath.row])
 
-        
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

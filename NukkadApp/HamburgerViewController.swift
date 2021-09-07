@@ -17,14 +17,13 @@ class HamburgerCell:UITableViewCell {
 class HamburgerViewController: APPViewController,UITableViewDelegate,UITableViewDataSource{
     
     @IBOutlet weak var hamburgerTableView: UITableView!
-    @IBOutlet weak var trailinConstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
   
-  static let sharedController = HamburgerViewController.instance() as! HamburgerViewController
+    @IBOutlet weak var trailingConstraint: NSLayoutConstraint!
+    static let sharedController = HamburgerViewController.instance() as! HamburgerViewController
 
     
-        var labelArray = ["NAME","HOME","MY TRIPS","PLAN A TRIP","MY PROFILE","RATE APP","LOGOUT"]
+        var labelArray = ["WELCOME TO NUKKAD BAZZAR","Location","Account","Basket","Offers","Category","Signin","Signup"]
 
         let cellId = "HamburgerCell"
         
@@ -41,15 +40,15 @@ class HamburgerViewController: APPViewController,UITableViewDelegate,UITableView
             superView?.layoutIfNeeded()
             self.view.isHidden = false
             hamburgerTableView.reloadData()
-            NSLayoutConstraint.deactivate([self.trailinConstraint])
+//            NSLayoutConstraint.deactivate([self.trailingConstraint])
             NSLayoutConstraint.activate([self.leadingConstraint])
             UIView.animate(withDuration: 0.2, animations: {
                 self.view.backgroundColor = UIColor.darkGray.withAlphaComponent(0.2)
                 superView?.layoutIfNeeded()
             })
         } else {
-            NSLayoutConstraint.deactivate([leadingConstraint])
-            NSLayoutConstraint.activate([trailinConstraint])
+//            NSLayoutConstraint.deactivate([leadingConstraint])
+            NSLayoutConstraint.activate([trailingConstraint])
             UIView.animate(withDuration: 0.2, animations: {
                 self.view.backgroundColor = UIColor.clear
                 superView?.layoutIfNeeded()
@@ -66,8 +65,31 @@ class HamburgerViewController: APPViewController,UITableViewDelegate,UITableView
         cell.listLbl.text = labelArray[indexPath.row]
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.show(show: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            switch self.labelArray[indexPath.item] {
+            case "Basket":
+                let cartListViewController = CartListViewController.instance() as! CartListViewController
+                UIApplication.shared.keyWindow?.rootViewController = AppNavigationController(rootViewController: cartListViewController)
+            case "Category":
+                let categoryListViewController = CategoriesListViewController.instance() as! CategoriesListViewController
+                UIApplication.shared.keyWindow?.rootViewController = AppNavigationController(rootViewController: categoryListViewController)
+            case "Signin":
+                let loginViewController = LoginViewController.instance() as! LoginViewController
+                UIApplication.shared.keyWindow?.rootViewController = AppNavigationController(rootViewController: loginViewController)
+            case "Signup":
+                let signupViewController = SignupViewController.instance() as! SignupViewController
+                UIApplication.shared.keyWindow?.rootViewController = AppNavigationController(rootViewController: signupViewController)
+           
+            
+            default:
+                print("default")
+            }
+        }
     }
+}
+
     
 
     

@@ -78,13 +78,17 @@ class DashboardCell: UICollectionViewCell {
          return cellB
         }
     }
-    override func leftBarButtonAction() {
-        if let count = self.navigationController?.viewControllers.count, count > 1 {
-            return super.leftBarButtonAction()
-        } else {
-            showHamburger()
-        }
+    override func leftBarButtonConfig() -> (barButtonType?, Any?) {
+        return (.kImage, #imageLiteral(resourceName: "ic_hambuger"))
     }
+    override func rightBarButtonconfig() -> (barButtonType?, Any?) {
+        return (.kImage,#imageLiteral(resourceName: "ic_cartcount"))
+    }
+    
+    override func leftBarButtonAction() {
+        self.showHamburger()
+    }
+    
     func setShadowForButton(button: UIButton!){
         button.layer.shadowOffset = CGSize(width: 0.0, height:2.0)
         button.layer.masksToBounds = false
@@ -93,14 +97,8 @@ class DashboardCell: UICollectionViewCell {
         button.layer.backgroundColor = UIColor.white.cgColor
         button.layer.shadowColor = UIColor.gray.cgColor
     }
-    override  func leftBarButtonConfig() -> (barButtonType?, Any?) {
-        return (.kImage,#imageLiteral(resourceName: "ic_hambuger"))
-    }
-    override func rightBarButtonconfig() -> (barButtonType?, Any?) {
-        return (.kImage,#imageLiteral(resourceName: "ic_cartcount"))
-    }
-    
 
+    
 }
 
 

@@ -92,7 +92,7 @@ class CategoriesListViewController: APPViewController,UITableViewDelegate, UITab
         for section in sectionsArray.indices {
             for row in sectionsArray[section].names.indices {
                 print(section,row)
-//
+
 //            let indexPath = IndexPath[row:row, section:section]
 //                indexpaths.append(indexPath)
             }
@@ -115,7 +115,16 @@ class CategoriesListViewController: APPViewController,UITableViewDelegate, UITab
         }
         
     }
+    override func leftBarButtonConfig() -> (barButtonType?, Any?) {
+        return (.kImage, #imageLiteral(resourceName: "ic_hambuger"))
+    }
+    override func rightBarButtonconfig() -> (barButtonType?, Any?) {
+        return (.kImage,#imageLiteral(resourceName: "ic_cartcount"))
+    }
     
+    override func leftBarButtonAction() {
+        self.showHamburger()
+    }
 }
 
 

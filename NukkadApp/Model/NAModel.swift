@@ -35,9 +35,11 @@ class NAUser: APPModel, NSCoding {
     var mobileNumber: String?
     var email: String?
     var password: String?
-    var userType:String?
+    var osName: String?
+    var osVersion: String?
     var userId:NSInteger?
     var token:String?
+    
     private static var CURRENT_USER: NAUser?
     
     static func current() -> NAUser? {
@@ -62,7 +64,8 @@ class NAUser: APPModel, NSCoding {
     user.email = dict["email"] as? String
     user.userId = (dict["user_id"] as? NSNumber)?.intValue
     user.password = dict["password"] as? String
-    
+    user.osName = dict["os_name"] as? String
+    user.osVersion = dict["os_version"] as? String
     return user
 }
     override init() {
@@ -76,7 +79,8 @@ class NAUser: APPModel, NSCoding {
         aCoder.encode(email, forKey: "email")
         aCoder.encode(password, forKey: "password")
         aCoder.encode(userId, forKey: "userId")
-        
+        aCoder.encode(osName, forKey: "os_name")
+        aCoder.encode(osVersion, forKey: "os_version")
 //        aCoder.encode(photoUrl, forKey: "photoUrl")
         aCoder.encode(token, forKey: "token")
     }
@@ -88,8 +92,11 @@ class NAUser: APPModel, NSCoding {
         email = aDecoder.decodeObject(forKey: "email") as? String
         password = aDecoder.decodeObject(forKey: "password") as? String
         userId = aDecoder.decodeObject(forKey: "userId") as? NSInteger
+        osName = aDecoder.decodeObject(forKey: "os_name") as? String
+        osVersion = aDecoder.decodeObject(forKey: "os_version") as? String
         token = aDecoder.decodeObject(forKey: "token") as? String
     }
+    
 }
 
 
